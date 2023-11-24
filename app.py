@@ -41,7 +41,7 @@ def details():
       
        db.execute("INSERT INTO orders VALUES (?, ?, ?,?,?)", (name,mobile_num,address,dish_name,price))
        db.commit() 
-   return render_template('Order_success.html')
+   return render_template('order_success.html')
 
 #admin login
 @app.route('/login',methods=['GET','POST'])
